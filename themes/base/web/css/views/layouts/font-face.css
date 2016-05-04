@@ -1,0 +1,101 @@
+/**
+ * @link https://github.com/Arza-Studio/yiingine
+ * @copyright Copyright (c) 2016 ARZA Studio
+ * @license https://github.com/Arza-Studio/yiingine/blob/master/LICENSE.md
+ */
+ 
+@font-face {
+    font-family: 'FontRegular';
+    src: url('../../../fonts/font-regular.eot');
+    src: url('../../../fonts/font-regular.eot?#iefix') format('embedded-opentype'),
+         url('../../../fonts/font-regular.woff2') format('woff2'),
+         url('../../../fonts/font-regular.woff') format('woff'),
+         url('../../../fonts/font-regular.ttf') format('truetype'),
+         url('../../../fonts/font-regular.svg#FontRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontRegularItalic';
+    src: url('../../../fonts/font-regular-italic.eot');
+    src: url('../../../fonts/font-regular-italic.eot?#iefix') format('embedded-opentype'),
+         url('../../../fonts/font-regular-italic.woff2') format('woff2'),
+         url('../../../fonts/font-regular-italic.woff') format('woff'),
+         url('../../../fonts/font-regular-italic.ttf') format('truetype'),
+         url('../../../fonts/font-regular-italic.svg#FontRegularItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontBold';
+    src: url('../../../fonts/font-bold.eot');
+    src: url('../../../fonts/font-bold.eot?#iefix') format('embedded-opentype'),
+         url('../../../fonts/font-bold.woff2') format('woff2'),
+         url('../../../fonts/font-bold.woff') format('woff'),
+         url('../../../fonts/font-bold.ttf') format('truetype'),
+         url('../../../fonts/font-bold.svg#FontBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontBoldItalic';
+    src: url('../../../fonts/font-bold-italic.eot');
+    src: url('../../../fonts/font-bold-italic.eot?#iefix') format('embedded-opentype'),
+         url('../../../fonts/font-bold-italic.woff2') format('woff2'),
+         url('../../../fonts/font-bold-italic.woff') format('woff'),
+         url('../../../fonts/font-bold-italic.ttf') format('truetype'),
+         url('../../../fonts/font-bold-italic.svg#FontBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FontLight';
+    src: url('../../../fonts/font-light.eot');
+    src: url('../../../fonts/font-light.eot?#iefix') format('embedded-opentype'),
+         url('../../../fonts/font-light.woff2') format('woff2'),
+         url('../../../fonts/font-light.woff') format('woff'),
+         url('../../../fonts/font-light.ttf') format('truetype'),
+         url('../../../fonts/font-light.svg#FontLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontLightItalic';
+    src: url('../../../fonts/font-light-italic.eot');
+    src: url('../../../fonts/font-light-italic.eot?#iefix') format('embedded-opentype'),
+         url('../../../fonts/font-light-italic.woff2') format('woff2'),
+         url('../../../fonts/font-light-italic.woff') format('woff'),
+         url('../../../fonts/font-light-italic.ttf') format('truetype'),
+         url('../../../fonts/font-light-italic.svg#FontLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontSemibold';
+    src: url('../../../fonts/font-semibold.eot');
+    src: url('../../../fonts/font-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../../../fonts/font-semibold.woff2') format('woff2'),
+         url('../../../fonts/font-semibold.woff') format('woff'),
+         url('../../../fonts/font-semibold.ttf') format('truetype'),
+         url('../../../fonts/font-semibold.svg#FontSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FontSemiboldItalic';
+    src: url('../../../fonts/font-semibold-italic.eot');
+    src: url('../../../fonts/font-semibold-italic.eot?#iefix') format('embedded-opentype'),
+         url('../../../fonts/font-semibold-italic.woff2') format('woff2'),
+         url('../../../fonts/font-semibold-italic.woff') format('woff'),
+         url('../../../fonts/font-semibold-italic.ttf') format('truetype'),
+         url('../../../fonts/font-semibold-italic.svg#FontSemiboldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
