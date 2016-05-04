@@ -1,0 +1,389 @@
+/* SVN FILE: $Id: main.css 2182 2016-04-28 21:17:09Z Mercier $ */
+/**
+ * @lastChangedBy       $LastChangedBy: Mercier $
+ * @copyright           ARZA STUDIO
+ * @version             $Revision: 2182 $
+ * @date                $Date: 2016-04-28 17:17:09 -0400 (Thu, 28 Apr 2016) $
+ * @license             LICENSE.TXT
+ * @filesource          $URL: https://svn.arza-studio.com/engine/template/trunk/web/css/main.css $
+ */
+
+/* Body */
+body
+{
+    font-family: "FontRegular", Helvetica, Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar
+{
+    border-bottom: none;
+}
+    /* Brand (Logo) */
+    .navbar-brand
+    {
+        height: 34px;
+        padding: 0 15px 0 15px;
+    }
+    @media (min-width: 992px)
+    {
+        .navbar-brand
+        {
+            height: 38px;
+            padding: 0 20px 0 15px;
+        }
+    }
+    @media (min-width: 1200px)
+    {
+        .navbar-brand
+        {
+            height: 42px;
+            padding: 0 25px 0 15px;
+        }
+    }
+        .navbar-brand svg
+        {
+            display: block;
+            border-radius: 4px;
+            height: 100%; /* see : .navbar-brand */
+            width: 51px; /* prevent display bug */
+        }
+        @media (min-width: 992px)
+        {
+            .navbar-brand svg
+            {
+                width: 95px; /* prevent display bug */
+            }
+        }
+        @media (min-width: 1200px)
+        {
+            .navbar-brand svg
+            {
+                width: 105px; /* prevent display bug */
+            }
+        }
+
+    .navbar-header.pull-right .form-group
+    {
+        margin: 8px 3px 3px 0;
+        float: left;
+    }
+    @media (min-width: 768px)
+    {
+        .navbar-header.pull-right .form-group
+        {
+            margin: 8px 0 3px 3px;
+        }
+    }
+    @media (min-width: 992px)
+    {
+        .navbar-header.pull-right .form-group
+        {
+            margin: 10px 0 3px 4px;
+        }
+    }
+    @media (min-width: 1200px)
+    {
+        .navbar-header.pull-right .form-group
+        {
+            margin: 12px 0 3px 5px;
+        }
+    }
+    @media (min-width: 1200px)
+    {
+        .navbar-form
+        {
+            padding: 0;
+        }
+            .navbar-form input[type=text].form-control 
+            {
+                height: 42px;
+                padding: 10px 12px;
+            }
+    }
+    @media (max-width: 767px)
+    {
+        #navbar
+        {
+            clear: both;
+        }
+    }
+    @media (max-width: 767px)
+    {
+        .navbar-right
+        {
+            padding-top : 7.5px;
+            border-top: 1px solid;
+        }
+    }
+    @media (min-width: 768px)
+    {
+        .navbar-right
+        {
+            margin-right: 0;
+        }
+    }
+
+/* Alerts */
+.alerts
+{
+    padding-top: 15px;
+}
+    .alerts .alert
+    {
+        margin-bottom: 15px;
+    }
+    
+/* Content */
+#content
+{
+    padding-top: 50px;
+}
+@media (min-width: 992px)
+{
+    #content
+    {
+        padding-top: 58px;
+    }
+}
+@media (min-width: 1200px)
+{
+    #content
+    {
+        padding-top: 66px;
+    }
+}
+    #content aside
+    {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+/* Sticky Footer */
+@media (min-width: 768px)
+{
+    html,
+    body
+    {
+        height: 100%;
+    }
+    .wrapper
+    {
+        min-height: 100%;
+        height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+        height: 100%;
+        margin: 0 auto -460px; /* the bottom margin is the negative value of the footer's height */
+    }
+    .stickyFooter,
+    .push
+    {
+        height: 460px; /* .push must be the same height as .stickyFooter */
+    }
+}
+
+/* Footer */
+#footer
+{
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+    #footer .btn
+    {
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 27px;
+        border-radius: 100%;
+    }
+    #footer ul
+    {
+        margin-bottom: 0;
+    }
+    #footer .col
+    {
+        position: relative;
+    }
+    #footer .col:nth-child(1)
+    {
+        padding-top: 5px;
+        padding-right: 0;
+    }
+        @media (max-width: 768px)
+        {
+            #footer .col:nth-child(1) img
+            {
+                max-width: 82px;
+            }
+            #footer .col:nth-child(2) ul
+            {
+                margin-top: 15px;
+                text-align: center;
+            }
+        }
+        #footer .getVCard
+        {
+            margin-top: 10px;
+        }
+        #footer .socialLinks
+        {
+            text-align: center;
+        }
+        @media (min-width: 768px)
+        {
+            #footer .socialLinks
+            {
+                text-align: right;
+            }
+        }
+            #footer .socialLinks .btn
+            {
+                margin-right: 5px;
+            }
+        #footer .copyright
+        {
+            font-size: 11px;
+            text-align: center;
+        }
+        @media (min-width: 768px)
+        {
+            #footer .copyright
+            {
+                text-align: right;
+                position: absolute;
+                bottom: 0;
+                right: 15px;
+            }
+        }
+    
+/* Window to top */
+.breadcrumbWrapper
+{
+    position: relative;
+}
+    .windowToTop
+    {
+        position: absolute;
+        top: 7px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+/* Button */
+.btn
+{
+    font-size: 14px;
+    padding: 7px 11px 5px 11px;
+}
+@media (min-width: 992px)
+{
+    .btn
+    {
+        font-size: 14.5px;
+        padding: 7px 13px 8px 13px;
+    }
+}
+@media (min-width: 1200px)
+{
+    .btn
+    {
+        font-size: 15px;
+        padding: 9px 14px 10px 14px;
+    }
+}
+
+/* Label */
+.label
+{
+    font-weight: normal;
+}
+
+/* Bootstrap style to disable */
+a:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus
+{
+    outline: none !important;
+}
+a:visited
+{
+    text-decoration: none !important;
+}
+
+/* Row with equal height columns */
+@media (min-width: 768px)
+{
+    .row-eq-height
+    {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+/* Popover */
+.popover .btn
+{
+    padding: 0;
+    margin: 0 5px 0 0 !important;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 27px;
+    border-radius: 100%;
+    display: inline-block;
+}
+.popover .btn:last-of-type
+{
+    margin-right: 0 !important;
+}
+
+/* Jumbotron */
+.jumbotron 
+{
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+    .jumbotron p
+    {
+        margin-bottom: initial;
+        font-size: initial;
+        font-weight: initial;
+    }
+    .jumbotron h1,
+    .jumbotron .h1
+    {
+        font-size: 36px;
+        margin-top: 0;
+    }
+    @media screen and (min-width: 768px)
+    {
+        .jumbotron,
+        .container .jumbotron,
+        .container-fluid .jumbotron
+        {
+            padding: 20px;
+        }
+    }
+    
+/* Flash message */
+.flash-message
+{
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    padding: 0 15px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 18px;
+}
+    .flash-message.alert
+    {
+        margin: 0px;
+    }

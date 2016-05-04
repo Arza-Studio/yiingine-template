@@ -1,0 +1,100 @@
+# ************************ HTACCESS CLIENT SITE ************************
+
+allow from all
+
+# ************************** PASSWORD PROTECT **************************
+# UNCOMMENT THE FOLLOWING DIRECTIVES TO PASSWORD PROTECT THE SITE.
+#AuthUserFile .htpasswd
+#AuthType Basic
+#AuthName "Access restricted"
+#Require valid-user
+# ***********************************************************************
+
+# EXTRA MIME-TYPES
+AddType font/otf                                    .otf
+AddType image/svg+xml                               .svg
+AddType application/x-font-ttf                      .ttf
+AddType application/octet-stream                    .ttf
+AddType font/truetype                               .ttf
+AddType font/ttf                                    .ttf
+AddType font/eot                                    .eot
+AddType application/vnd.ms-fontobject               .eot
+AddType font/woff                                   .woff
+AddType application/font-wof                        .woff
+AddType application/x-font-woff                     .woff
+AddType application/x-woff                          .woff
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css font/otf
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css image/svg+xml
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css font/ttf
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css font/eot
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css font/woff
+
+# Create .ovhconfig to set a php version on OVH servers
+# app.engine=php
+# app.engine.version=5.6
+
+<Files "index.php">
+    allow from all
+</Files>
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>
+
+IndexIgnore *
+Options +FollowSymLinks -Indexes
+
+RewriteEngine on
+# Rewrite base has to be set to the site alias on the server
+RewriteBase /
+
+# ************************** CACHE CONTROL ******************************
+<IfModule mod_expires.c>
+ExpiresActive On
+# Set an expiration time of 10 days from the time of first access for all files.
+ExpiresDefault A864000
+</IfModule>
+# ***********************************************************************
+
+# ************************** MAINTENANCE BLOCK **************************
+# UNCOMMENT THE FOLLOWING REWRITE DIRECTIVES TO CLOSE THE SITE.
+
+# Closes the site to everybody else, but leaves it OPEN to you.
+# When commented out, the site is closed to everyone, including yourself.
+# To enable the line, remove the # (pound sign) at the start of it. 
+# You MUST first change the digits 111 222 333 444 to match YOUR IP address.
+#RewriteCond %{REMOTE_ADDR} !^111\.222\.333\.444$ 
+# It is easy to modify the above line so it does the opposite:
+# close the site only to you, but leave it OPEN to everybody else.
+# Put an exclamation point ! in front of the ^ character, to make it: !^
+
+# The remaining two code lines close the site. If its PHP that is causing
+# the problem, uncomment the line for maintenance.html.
+# If the request is NOT for /maintenance.php(html), send /maintenance.php(html) instead.
+# Allowing maintenance.php to be served as-is prevents an endless redirect loop.
+#RewriteCond %{REQUEST_URI} !^/maintenance\.php$
+#RewriteCond %{REQUEST_URI} !^/maintenance\.html$
+# To allow another file, copy the line above to here and change the filename. 
+
+#This allows apache to access either file so the appropriate line must be commented out.
+#<Files "maintenance.php">
+#    allow from all
+#</Files>
+#<Files "maintenance.html"> 
+#    allow from all
+#</Files>
+
+# This line says: no matter what file was requested, serve maintenance.php(html).
+# This is a rewrite (not a redirect), so we use the local file path, no http://
+#RewriteRule ^(.*)$ maintenance.php [L]
+#RewriteRule ^(.*)$ maintenance.html [L]
+
+# source: http://25yearsofprogramming.com/blog/20070704.htm
+# ***********************************************************************
+
+# If a directory or a file exists, use it directly,
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise, forward it to index.php.
+RewriteRule . index.php

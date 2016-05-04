@@ -1,0 +1,59 @@
+/**
+ * @link https://github.com/Arza-Studio/yiingine
+ * @copyright Copyright (c) 2016 ARZA Studio
+ * @license https://github.com/Arza-Studio/yiingine/blob/master/LICENSE.md
+ */
+
+#navbar .mainMenu li a
+{
+    font-family: "FontRegular", Helvetica, Arial, sans-serif;
+    text-shadow: none;
+}
+    #navbar .mainMenu .dropdown-menu
+    {
+        border: none;
+    }
+@media (min-width: 768px)
+{
+    #navbar .mainMenu li a
+    {
+        border-radius: 4px;
+        padding: 9px 10px 5px 10px;
+        margin: 8px 0;
+        font-size: 14px;
+    }
+        #navbar .mainMenu .dropdown-menu li a
+        {
+            border-radius: 0;
+            padding: 7px 15px;
+            margin: 0;
+        }
+    }
+@media (min-width: 992px)
+{
+    #navbar .mainMenu li a
+    {
+        border-radius: 5px;
+        padding: 12px 10px 6px 10px;
+        margin: 10px 0;
+        font-size: 14.5px;
+    }
+        #navbar .mainMenu .dropdown-menu li a
+        {
+            padding: 8px 16px;
+        }
+}
+@media (min-width: 1200px)
+{
+    #navbar .mainMenu li a
+    {
+        border-radius: 5px;
+        padding: 15px 10px 7px 10px;
+        margin: 12px 0;
+        font-size: 15px;
+    }
+        #navbar .mainMenu .dropdown-menu li a
+        {
+            padding: 9px 17px;
+        }
+}
