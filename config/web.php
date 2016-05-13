@@ -62,7 +62,7 @@ $config = [
         ],
         'db' => [],
         'palette' => [
-            'class' => '\yiingine\components\Palette',
+            'class' => '\yiingine\base\Palette',
             'colors' => [
                 'Gray' => '#787878',
                 'BrandPrimary' => '#0f8333', // to replace recursively
