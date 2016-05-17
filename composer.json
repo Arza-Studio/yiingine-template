@@ -1,21 +1,37 @@
 {
-    "name": "arza-studio/template2",
-    "description": "Arza STUDIO application template 2.0",
+    "name": "arza-studio/yiingine-template",
+    "description": "A basic website for showcasing the capabilities of the yiingine",
     "keywords": [
-        "Arza",
+        "Arza Studio",
+        "yiingine",
+        "yii2",
         "framework",
         "basic",
         "application template"
     ],
-    "homepage": "http://www.arza-studio.com/",
+    "homepage": "https://github.com/Arza-Studio/yiingine-template",
     "type": "project",
-    "license": "proprietary",
+    "license": "BSD-3",
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Antoine Mercier-Linteau",
+            "email": "antoine.mercier-linteau@arza-studio.com",
+            "homepage": "http://www.arza-studio.com/",
+            "role": "Founder and back-end development"
+        },
+        {
+            "name": "Antoine Wolff",
+            "email": "antoine.wolff@arza-studio.com",
+            "homepage": "http://www.arza-studio.com/",
+            "role": "Founder and front-end development"
+        }
+    ],
     "repositories": [
         {
-            "type": "artifact",
-            "url": ".."
+            "type": "git",
+            "url": "https://github.com/Arza-Studio/yiingine"
         }
     ],
     "require": {
@@ -23,7 +39,7 @@
         "yiisoft/yii2": "*",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
-        "arza-studio/yiingine": "*"
+        "arza-studio/yiingine": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
@@ -31,12 +47,11 @@
         "yiisoft/yii2-gii": "*",
         "yiisoft/yii2-faker": "*"
     },
-    "config": {
-        "process-timeout": 1800,
-        "component-dir": "../assets/components"
-    },
     "scripts": {
         "post-create-project-cmd": [
+            "yii\\composer\\Installer::postCreateProject"
+        ],
+        "post-install-cmd": [
             "yii\\composer\\Installer::postCreateProject"
         ]
     },
