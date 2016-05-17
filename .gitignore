@@ -1,0 +1,9 @@
+.*
+config/db.php
+vendor/**
+web/assets/**
+web/user
+*.lock
+rbac/**
+runtime/**
+modules/**
