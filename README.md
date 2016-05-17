@@ -8,7 +8,7 @@ system built upon the very popular [Yii2](https://github.com/yiisoft/yii2), [com
 
 [Download](https://github.com/Arza-Studio/yiingine-template/archive/master.zip) a version of the project and extract it in a folder.
 
-### 1. Get Composer
+### 2. Get Composer
 
 If you do not already have Composer installed, you may do so by following the instructions at
 [getcomposer.org](https://getcomposer.org/download/).
@@ -31,7 +31,7 @@ The command installs the [composer asset plugin](https://github.com/francoispluc
 which allows managing bower and npm package dependencies through Composer. You only need to run this command
 once for all.
 
-### 1. Install dependencies
+### 3. Install dependencies
 
 To install dependencies run the following command from within the project's folder:
 
@@ -45,7 +45,7 @@ This will download all dependencies and put them under the `vendor` folder.
 > needs to get enough API rate-limit to retrieve the dependent package information from Github. For more details, 
 > please refer to the [Composer documentation](https://getcomposer.org/doc/articles/troubleshooting.md#api-rate-limit-and-oauth-tokens).
 
-### 1. Set up the configuration file
+### 4. Set up the configuration file
 
 > Note: for more information on how to configure Yii applications, see [the documentation](http://www.yiiframework.com/doc-2.0/guide-concept-configurations.html).
 
@@ -57,7 +57,7 @@ This will download all dependencies and put them under the `vendor` folder.
   ```
 2. Copy the `config/db.example.php` file to `config/db.php` and enter you database's credentials under the `local` section. For more information on how to set up databases with Yii, please see the [documentation](http://www.yiiframework.com/doc-2.0/guide-concept-configurations.html).
 
-### 1. Deploy the database schema
+### 5. Deploy the database schema
 
 In order to deploy the basic database schema for the project run this command from within the application's folder:
 
@@ -67,7 +67,7 @@ In order to deploy the basic database schema for the project run this command fr
 
 This will create all the tables needed by the project and populate them with some demo data.
 
-### 1. You're done! Test you application
+### 6. You're done! Test you application
 
 The installation is done! To test it, you can either configure you own web server or use PHP's built in web server. Go to the `web` directory and run this command:
 
